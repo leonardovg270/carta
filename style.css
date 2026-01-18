@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+#titulo {
+    font-family: "Milonga", serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#cartaImg {
+    width: 300px;
+    margin-top: -50px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes abrirCarta {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    animation: abrirCarta 0.5s ease;
+}
+
+#cartaImg {
+    transition: transform 0.3s;
+}
+
+#playMusic {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+@keyframes florSubindo {
+    0% {
+        transform: translateY(100px) scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px) scale(1.2);
+        opacity: 1;
+    }
+}
+
+
+
+.flor img {
+    width: 250px;
+}
+
+
+#contador {
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 28px;
+    text-align: center;
+}
+
+.fotoCarta {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+

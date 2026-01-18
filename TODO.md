@@ -1,0 +1,3 @@
+- [x] Add modal HTML to index.html
+- [x] Add JavaScript to script.js for modal functionality
+- [x] Add CSS styles to style.css for modal
